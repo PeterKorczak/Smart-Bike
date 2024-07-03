@@ -19,7 +19,7 @@ event, values = window.read()
 if event == sg.WIN_CLOSED or event == 'OK':
     user_input = values['-CITY-']  # Get the input value from the key '-CITY-'
 
-    api_key = 'dedf0f08dee5dee7888cff5e1af013b9'
+    api_key = 'Hello World'
     weather_data = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={user_input}&units=imperial&APPID={api_key}")
 
     if weather_data.status_code == 200:
